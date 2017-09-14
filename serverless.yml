@@ -15,3 +15,11 @@ functions:
           path: /
           method: post
           cors: true
+
+  UserLogin:
+    handler: lib/handlers/UserHandler.UserLogin
+    events:
+      - http:
+          path: /login
+          method: post
+          cors: true
